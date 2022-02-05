@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a1da5ee8.css",
+    "main.js": "/Portfolio/static/js/main.f73fa6c7.js",
+    "static/media/psychedelic.png": "/Portfolio/static/media/psychedelic.9159d61d31b6492f7b1a.png",
+    "static/media/eva.png": "/Portfolio/static/media/eva.7e956457d2a00c082fc1.png",
+    "index.html": "/Portfolio/index.html",
+    "main.a1da5ee8.css.map": "/Portfolio/static/css/main.a1da5ee8.css.map",
+    "main.f73fa6c7.js.map": "/Portfolio/static/js/main.f73fa6c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1da5ee8.css",
+    "static/js/main.f73fa6c7.js"
+  ]
+}
