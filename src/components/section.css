@@ -1,0 +1,32 @@
+.section {
+  margin: auto;
+  padding: 120px;
+  width: 800px;
+  text-align: center;
+}
+
+.section_header {
+  font-size: 22px;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.section_content {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 40px;
+  grid-row-gap: 80px;
+}
+
+.section_content .item {
+  height: 150px;
+  width: 250px;
+}
+
+img {
+  border-radius: 8%;
+}
+
+p {
+  font-size: 15px;
+}

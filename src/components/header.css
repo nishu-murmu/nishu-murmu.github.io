@@ -1,0 +1,64 @@
+.header {
+	position: fixed;
+	width: 100%;
+	font-size: 25px;
+	padding: 20px 10px;
+	justify-content: space-around;
+}
+
+.name {
+	font-weight: bolder;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.navigation {
+	font-size: 20px;
+	display: flex;
+}
+
+.navigation .link {
+	position: relative;
+	padding: 4px 0px;
+	margin: 0px 20px;
+	text-decoration: none;
+}
+
+.navigation .github {
+	text-decoration: none;
+	padding: 4px 0px;
+	margin: 0 20px;
+}
+
+.navigation .link:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: grey;
+	transform-origin: bottom right;
+	transition: transform 0.4s ease-out;
+}
+
+.navigation .link:not(:last-child):hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.navigation .bars {
+	display: none;
+}
+
+/*media screen for mobile devices*/
+@media screen and (max-width: 800px) {
+	.navigation .link,
+	.github {
+		display: none;
+	}
+	.navigation .bars {
+		display: inline-block;
+	}
+}
