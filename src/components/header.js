@@ -1,23 +1,35 @@
-import React, { useState } from "react";
-import { Stack, HStack, IconButton, useColorMode } from "@chakra-ui/react";
-import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import React from "react";
+import {
+    HStack,
+    VStack,
+    Flex,
+    IconButton,
+    useColorMode,
+    useDisclosure,
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalBody,
+} from "@chakra-ui/react";
+import { HamburgerIcon, SunIcon } from "@chakra-ui/icons";
 
 // files
 import "./header.css";
 
 const Header = (props) => {
-    const { colorMode, toggleColorMode } = useColorMode();
+    const { toggleColorMode } = useColorMode();
+    const { isOpen, onOpen, onClose } = useDisclosure();
 
     return (
         <HStack spacing="20px" className="header">
             <a href="https://github.com/nishu-murmu/Portfolio" className="name">
                 Nishu &nbsp; Murmu
             </a>
-            <div className="navigation">
-                <a href="./sections/post.tsx" className="link">
-                    Posts
+            <Flex className="navigation">
+                <a href="./sections/post.js" className="link">
+                    Blog
                 </a>
-                <a href="./sections/about.tsx" className="link">
+                <a href="./sections/about.js" className="link">
                     About
                 </a>
                 <a
@@ -26,16 +38,41 @@ const Header = (props) => {
                 >
                     <i className="fab fa-github"></i>
                 </a>
-                <HStack spacing="20px">
+                <HStack spacing="20px" className="buttons">
                     <IconButton
                         variant="solid"
                         onClick={() => toggleColorMode()}
                         icon={<SunIcon />}
                         key="tableModeButton"
+                        className="toggle"
                     />
-                    <IconButton icon={<HamburgerIcon />} className="bars" />
+                    <IconButton
+                        variant="outline"
+                        icon={<HamburgerIcon />}
+                        onClick={onOpen}
+                        className="bars"
+                    />
+                    <Modal
+                        isOpen={isOpen}
+                        onClose={onClose}
+                        size="xs"
+                        motionPreset="slideInBottom"
+                    >
+                        <ModalOverlay />
+                        <ModalContent>
+                            <ModalBody>
+                                <VStack>
+                                    <a href="/sections/post.js">Blog</a>
+                                    <a href="./sections/about.js">About</a>
+                                    <a href="https://github.com/nishu-murmu/Portfolio">
+                                        Source
+                                    </a>
+                                </VStack>
+                            </ModalBody>
+                        </ModalContent>
+                    </Modal>
                 </HStack>
-            </div>
+            </Flex>
         </HStack>
     );
 };

@@ -60,11 +60,11 @@ const ItemList = () => {
 					<img
 						src={index.src}
 						alt={index.name}
-						height="150"
-						width="250"
+						height="180"
+						width="280"
 					/>
+					<p>{index.info}</p>
 				</a>
-				<p>{index.info}</p>
 			</div>
 		);
 	});

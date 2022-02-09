@@ -11,7 +11,7 @@ const App = () => {
     <Fragment>
       <Header />
       <Section />
-      <Footer />
+      {/*<Footer />*/}
     </Fragment>
   );
 };

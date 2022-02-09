@@ -1,5 +1,6 @@
 import React from "react";
 import { VStack, HStack, Flex } from "@chakra-ui/react";
+
 //files
 import "./section.css";
 import ItemList from "./itemList.js";

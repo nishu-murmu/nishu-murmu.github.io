@@ -2,19 +2,17 @@
   margin: auto;
   padding: 120px;
   width: 800px;
-  text-align: center;
 }
 
 .section_header {
   font-size: 22px;
+  margin: 120px 0px 50px 0px;
   font-weight: bolder;
-  padding: 10px;
 }
 
 .section_content {
-  display: flex;
   flex-wrap: wrap;
-  grid-column-gap: 40px;
+  grid-column-gap: 60px;
   grid-row-gap: 80px;
 }
 
@@ -28,5 +26,29 @@ img {
 }
 
 p {
+  padding: 10px 0px;
   font-size: 15px;
+}
+
+/*media screen for mobile devices*/
+@media screen and (max-width: 800px) {
+  .section {
+    margin: auto;
+    width: 100%;
+  }
+  .section_header {
+    font-size: 22px;
+    margin: 120px 0px 50px 0px;
+    font-weight: bolder;
+  }
+  .section_content {
+    flex-wrap: wrap;
+  }
+  .section_content {
+    flex-direction: column;
+  }
+  .section_content .item {
+    height: 180px;
+    width: 280px;
+  }
 }
