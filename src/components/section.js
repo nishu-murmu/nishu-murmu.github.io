@@ -1,5 +1,5 @@
 import React from "react";
-import { VStack, HStack, Flex } from "@chakra-ui/react";
+import { VStack, Flex } from "@chakra-ui/react";
 
 //files
 import "./section.css";
