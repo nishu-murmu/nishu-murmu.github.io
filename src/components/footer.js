@@ -1,15 +1,16 @@
 import React from "react";
-
+import {Box} from "@chakra-ui/react"
 //files
 import "./footer.css";
 
 const Footer = () => {
+
   return (
-    <div className="footer">
+    <Box className="footer">
       &copy; 2022,
       <a href="https://github.com/nishu-murmu/Portfolio">Nishu Murmu</a>. All
       rights reserved.
-    </div>
+    </Box>
   );
 };
 
