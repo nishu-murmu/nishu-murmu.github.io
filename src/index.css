@@ -1,5 +1,12 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
   font-family: "Cantarell", source-code-pro;
   font-size: 20px;
 }
+
+
+/*
+1. dont add view port height and width for responsiveness
+
+*/
