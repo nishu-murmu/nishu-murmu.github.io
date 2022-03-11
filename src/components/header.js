@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import {
     HStack,
     VStack,
@@ -11,7 +12,7 @@ import {
     ModalContent,
     ModalBody,
 } from "@chakra-ui/react";
-import { HamburgerIcon, SunIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, MoonIcon } from "@chakra-ui/icons";
 
 // files
 import "./header.css";
@@ -22,16 +23,19 @@ const Header = (props) => {
 
     return (
         <HStack spacing="20px" className="header">
-            <a href="https://github.com/nishu-murmu/Portfolio" className="name">
+            <Link to="/about" className="name">
                 Nishu &nbsp; Murmu
-            </a>
+            </Link>
             <Flex className="navigation">
-                <a href="./sections/post.js" className="link">
+                <Link to="/works" className="link">
+                    Works
+                </Link>
+                <Link to="/blog" className="link">
                     Blog
-                </a>
-                <a href="./sections/about.js" className="link">
+                </Link>
+                <Link to="/about" className="link">
                     About
-                </a>
+                </Link>
                 <a
                     href="https://github.com/nishu-murmu/Portfolio"
                     className="github"
@@ -42,7 +46,7 @@ const Header = (props) => {
                     <IconButton
                         variant="solid"
                         onClick={() => toggleColorMode()}
-                        icon={<SunIcon />}
+                        icon={<MoonIcon />}
                         key="tableModeButton"
                         className="toggle"
                     />
@@ -62,8 +66,9 @@ const Header = (props) => {
                         <ModalContent>
                             <ModalBody>
                                 <VStack>
-                                    <a href="/sections/post.js">Blog</a>
-                                    <a href="./sections/about.js">About</a>
+                                    <Link href="/works">Works</Link>
+                                    <Link href="/blog">Blog</Link>
+                                    <Link href="/about">About</Link>
                                     <a href="https://github.com/nishu-murmu/Portfolio">
                                         Source
                                     </a>
