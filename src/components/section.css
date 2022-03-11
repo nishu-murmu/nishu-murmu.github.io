@@ -16,13 +16,13 @@
   grid-row-gap: 80px;
 }
 
-.section_content .item {
-  height: 150px;
-  width: 250px;
-}
+  .section_content .item {
+    height: 150px;
+    width: 250px;
+  }
 
 img {
-  border-radius: 8%;
+  border-radius: 15px;
 }
 
 p {
@@ -48,7 +48,12 @@ p {
     flex-direction: column;
   }
   .section_content .item {
-    height: 180px;
-    width: 280px;
+    height: 220px;
+    width: 320px;
+  }
+  .section_content p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
   }
 }
