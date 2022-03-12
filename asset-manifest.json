@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nishu-murmu.github.io/static/css/main.5af6484f.css",
-    "main.js": "/nishu-murmu.github.io/static/js/main.8356436b.js",
+    "main.css": "/nishu-murmu.github.io/static/css/main.db569c55.css",
+    "main.js": "/nishu-murmu.github.io/static/js/main.9e64aec7.js",
     "static/media/psychedelic.png": "/nishu-murmu.github.io/static/media/psychedelic.9159d61d31b6492f7b1a.png",
     "static/media/eva.png": "/nishu-murmu.github.io/static/media/eva.7e956457d2a00c082fc1.png",
     "index.html": "/nishu-murmu.github.io/index.html",
-    "main.5af6484f.css.map": "/nishu-murmu.github.io/static/css/main.5af6484f.css.map",
-    "main.8356436b.js.map": "/nishu-murmu.github.io/static/js/main.8356436b.js.map"
+    "main.db569c55.css.map": "/nishu-murmu.github.io/static/css/main.db569c55.css.map",
+    "main.9e64aec7.js.map": "/nishu-murmu.github.io/static/js/main.9e64aec7.js.map"
   },
   "entrypoints": [
-    "static/css/main.5af6484f.css",
-    "static/js/main.8356436b.js"
+    "static/css/main.db569c55.css",
+    "static/js/main.9e64aec7.js"
   ]
 }
