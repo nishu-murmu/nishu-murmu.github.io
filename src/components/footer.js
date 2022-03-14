@@ -1,7 +1,7 @@
 import React from "react";
 import {Box} from "@chakra-ui/react"
 //files
-import "./footer.css";
+import "./styles/footer.css";
 
 const Footer = () => {
 

@@ -26,6 +26,7 @@ img {
 }
 
 p {
+  text-align: center;
   padding: 10px 0px;
   font-size: 15px;
 }
@@ -54,6 +55,6 @@ p {
   .section_content p {
     text-align: center;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }

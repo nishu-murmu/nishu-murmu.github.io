@@ -6,16 +6,18 @@ import {
     Flex,
     IconButton,
     useColorMode,
+    useColorModeValue,
     useDisclosure,
     Modal,
+    Box,
     ModalOverlay,
     ModalContent,
     ModalBody,
 } from "@chakra-ui/react";
-import { HamburgerIcon, MoonIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 // files
-import "./header.css";
+import "./styles/header.css";
 
 const Header = (props) => {
     const { toggleColorMode } = useColorMode();
@@ -46,7 +48,8 @@ const Header = (props) => {
                     <IconButton
                         variant="solid"
                         onClick={() => toggleColorMode()}
-                        icon={<MoonIcon />}
+                        colorScheme={useColorModeValue('blue', 'yellow')}
+                        icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
                         key="tableModeButton"
                         className="toggle"
                     />
@@ -66,9 +69,9 @@ const Header = (props) => {
                         <ModalContent>
                             <ModalBody>
                                 <VStack>
-                                    <Link href="/works">Works</Link>
-                                    <Link href="/blog">Blog</Link>
-                                    <Link href="/about">About</Link>
+                                    <Link to="/works">Works</Link>
+                                    <Link to="/blog">Blog</Link>
+                                    <Link to="/about">About</Link>
                                     <a href="https://github.com/nishu-murmu/Portfolio">
                                         Source
                                     </a>

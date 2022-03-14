@@ -1,5 +1,11 @@
+import {Box, Stack} from '@chakra-ui/react'
+
+//files
+
 const About = () => {
-	return (<div>This is About Section.</div>)
+	return (
+    <Box>This is a blog.</Box>
+  )
 }
 
 export default About

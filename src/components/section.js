@@ -3,7 +3,7 @@ import { VStack, Flex } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 
 //files
-import './section.css'
+import './styles/section.css'
 import Works from "./sections/works.js";
 import About from "./sections/about.js";
 import Blog from "./sections/blog.js";
