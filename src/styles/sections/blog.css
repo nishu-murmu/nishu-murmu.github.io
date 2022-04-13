@@ -1,0 +1,5 @@
+.blog_content {
+  flex-wrap: wrap;
+  grid-column-gap: 60px;
+  grid-row-gap: 80px;
+}
