@@ -1,5 +1,0 @@
-class findertools(object):
-	"""docstring for findertools"""
-	def __init__(self, arg):
-		super(findertools, self).__init__()
-		self.arg = arg
