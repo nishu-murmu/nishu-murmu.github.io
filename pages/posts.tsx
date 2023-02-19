@@ -1,12 +1,13 @@
 import Layout from '../components/layout/main'
 
-
-export default function Home() {
+const Posts: React.FC = () => {
     return (
         <>
             <Layout>
-                Test this out please from index 
+                Test this from posts
             </Layout>
         </>
     )
 }
+
+export default Posts
